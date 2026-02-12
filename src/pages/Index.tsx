@@ -10,12 +10,12 @@ const SKILLS = {
 };
 
 const PROJECTS = [
-  { title: "Community Crime Watch - Stay Safe Together", desc: "A web-based platform that helps communities report and monitor local crime incidents in real time.", tags: ["React", "Node.js", "MongoDB", "Maps API"], emoji: "🚨" },
-  { title: "AI Learning Chatbot", desc: "An interactive web chatbot that allows users to learn about artificial intelligence topics through conversation.", tags: ["JavaScript", "REST API", "NLP"], emoji: "🤖" },
-  { title: "NovaWeb Designs", desc: "A modern web application designed to deliver fast, responsive, and user-friendly digital experiences.", tags: ["HTML", "CSS", "JavaScript"], emoji: "✨" },
-  { title: "AI for an Eye Analyser Prototype", desc: "A prototype application that uses AI to analyze eye-related medical data and provide insights.", tags: ["Python", "TensorFlow", "Flask"], emoji: "👁️" },
-  { title: "Sentiment Analysis Dashboard", desc: "A dashboard that analyzes and visualizes sentiment data from various text sources in real-time.", tags: ["React", "Python", "NLP"], emoji: "📊" },
-  { title: "IKAMVA LETHU | Aluminium & Welding Solutions", desc: "A professional business website for an aluminium and welding solutions company.", tags: ["Web Design", "Business", "Netlify"], emoji: "🔧" },
+  { title: "Community Crime Watch - Stay Safe Together", desc: "A web-based platform that helps communities report and monitor local crime incidents in real time.", tags: ["React", "Node.js", "MongoDB", "Maps API"], emoji: "🚨", link: "https://community-crime-watch-stay-safe-together.netlify.app/" },
+  { title: "AI Learning Chatbot", desc: "An interactive web chatbot that allows users to learn about artificial intelligence topics through conversation.", tags: ["JavaScript", "REST API", "NLP"], emoji: "🤖", link: "https://ai-learning-chatbot1.netlify.app/" },
+  { title: "NovaWeb Designs", desc: "A modern web application designed to deliver fast, responsive, and user-friendly digital experiences.", tags: ["HTML", "CSS", "JavaScript"], emoji: "✨", link: "https://novawebdesigns.netlify.app/" },
+  { title: "AI for an Eye Analyser Prototype", desc: "A prototype application that uses AI to analyze eye-related medical data and provide insights.", tags: ["Python", "TensorFlow", "Flask"], emoji: "👁️", link: "" },
+  { title: "Sentiment Analysis Dashboard", desc: "A dashboard that analyzes and visualizes sentiment data from various text sources in real-time.", tags: ["React", "Python", "NLP"], emoji: "📊", link: "https://sentiment-analysis-dashboard-compare-ai-models.netlify.app/" },
+  { title: "IKAMVA LETHU | Aluminium & Welding Solutions", desc: "A professional business website for an aluminium and welding solutions company.", tags: ["Web Design", "Business", "Netlify"], emoji: "🔧", link: "https://ikamvalethu.netlify.app/" },
 ];
 
 const CERTIFICATES = [
@@ -136,7 +136,11 @@ const Index = () => {
                   <span className="text-3xl">{project.emoji}</span>
                   <div className="flex gap-2">
                     <Github size={18} className="text-muted-foreground hover:text-foreground cursor-pointer" />
-                    <ExternalLink size={18} className="text-muted-foreground hover:text-foreground cursor-pointer" />
+                    {project.link && (
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={18} className="text-muted-foreground hover:text-foreground cursor-pointer" />
+                      </a>
+                    )}
                   </div>
                 </div>
                 <h3 className="font-display font-semibold text-primary mb-3">{project.title}</h3>
