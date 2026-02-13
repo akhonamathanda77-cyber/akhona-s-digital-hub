@@ -84,7 +84,7 @@ const Index = () => {
       </section>
 
       {/* About */}
-      <section id="about" className="py-24">
+      <section id="about" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-display font-bold mb-12">Who I Am</h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -109,7 +109,7 @@ const Index = () => {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="py-24">
+      <section id="skills" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <p className="text-primary font-medium text-sm uppercase tracking-widest text-center mb-2">Expertise</p>
           <h2 className="text-4xl font-display font-bold text-center mb-4">Technical Skills</h2>
@@ -133,7 +133,7 @@ const Index = () => {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="py-24">
+      <section id="projects" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-display font-bold text-center mb-4">Featured Projects</h2>
           <p className="text-muted-foreground text-center mb-16 max-w-xl mx-auto">A selection of projects that showcase my skills and passion for development</p>
@@ -165,7 +165,7 @@ const Index = () => {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="py-24">
+      <section id="experience" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-display font-bold text-center mb-16">Experience</h2>
           <div className="max-w-2xl mx-auto bg-card border border-border rounded-xl p-8">
@@ -187,7 +187,7 @@ const Index = () => {
       </section>
 
       {/* Education */}
-      <section id="education" className="py-24">
+      <section id="education" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-display font-bold text-center mb-16">Education & Certificates</h2>
           
@@ -258,7 +258,7 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-24">
+      <section id="contact" className="py-24 scroll-mt-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-display font-bold text-center mb-16">Get In Touch</h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
