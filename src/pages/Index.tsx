@@ -19,10 +19,18 @@ const PROJECTS = [
 ];
 
 const CERTIFICATES = [
-  "HTML & in Depth", "Interactivity with JavaScript", "Introduction to Front-End Development",
-  "Responsive Design", "Version Control", "Web Design for Everybody",
-  "AI Managing Bias & Ethics", "Introduction to HTML5", "Responsible AI",
-  "Supervised Machine Learning", "Unsupervised Learning", "Full Stack",
+  { name: "HTML & in Depth", link: "https://coursera.org/share/d661861e78cf1a29f0148028f3345cdc" },
+  { name: "Interactivity with JavaScript", link: "" },
+  { name: "Introduction to Front-End Development", link: "" },
+  { name: "Responsive Design", link: "" },
+  { name: "Version Control", link: "" },
+  { name: "Web Design for Everybody", link: "" },
+  { name: "AI Managing Bias & Ethics", link: "" },
+  { name: "Introduction to HTML5", link: "" },
+  { name: "Responsible AI", link: "" },
+  { name: "Supervised Machine Learning", link: "" },
+  { name: "Unsupervised Learning", link: "" },
+  { name: "Full Stack", link: "" },
 ];
 
 const Index = () => {
@@ -233,10 +241,17 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CERTIFICATES.map(cert => (
-              <div key={cert} className="bg-card border border-border rounded-xl p-4 hover:border-primary/30 transition-colors">
-                <h4 className="font-display font-medium text-sm">{cert}</h4>
-                <p className="text-primary text-xs mt-1">Coursera</p>
-              </div>
+              cert.link ? (
+                <a key={cert.name} href={cert.link} target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-4 hover:border-primary/30 transition-colors block">
+                  <h4 className="font-display font-medium text-sm flex items-center gap-2">{cert.name} <ExternalLink size={12} className="text-primary" /></h4>
+                  <p className="text-primary text-xs mt-1">Coursera</p>
+                </a>
+              ) : (
+                <div key={cert.name} className="bg-card border border-border rounded-xl p-4 hover:border-primary/30 transition-colors">
+                  <h4 className="font-display font-medium text-sm">{cert.name}</h4>
+                  <p className="text-primary text-xs mt-1">Coursera</p>
+                </div>
+              )
             ))}
           </div>
         </div>
