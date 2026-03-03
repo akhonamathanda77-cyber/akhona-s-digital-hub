@@ -267,7 +267,7 @@ const Index = () => {
               {[
                 { icon: Mail, label: "Email", value: "akhonamathanda77@gmail.com", href: "mailto:akhonamathanda77@gmail.com" },
                 { icon: Phone, label: "Phone", value: "062 515 2090", href: "tel:0625152090" },
-                { icon: MapPin, label: "Location", value: "Cape Town, South Africa", href: "#" },
+                { icon: MapPin, label: "Location", value: "Cape Town, South Africa", href: "https://maps.google.com/?q=Cape+Town,+South+Africa" },
               ].map(({ icon: Icon, label, value, href }) => (
                 <a key={label} href={href} className="flex items-center gap-4 bg-card border border-border rounded-xl p-5 hover:border-primary/30 transition-colors">
                   <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center">
