@@ -16,6 +16,7 @@ const PROJECTS = [
   { title: "AI for an Eye Analyser Prototype", desc: "A prototype application that uses AI to analyze eye-related medical data and provide insights.", tags: ["Python", "TensorFlow", "Flask"], emoji: "👁️", link: "https://www.figma.com/proto/thTajjR3DACaJFciK3z9zz/AI4nEye?node-id=1-2&starting-point-node-id=1%3A2" },
   { title: "Sentiment Analysis Dashboard", desc: "A dashboard that analyzes and visualizes sentiment data from various text sources in real-time.", tags: ["React", "Python", "NLP"], emoji: "📊", link: "https://senti-score-hub.lovable.app/" },
   { title: "Ikamva Lethu Aluminium and Solutions", desc: "A professional business website for an aluminium and welding solutions company.", tags: ["Web Design", "Business", "Netlify"], emoji: "🔧", link: "https://ikamva-lethu-aluminium-and-welding.netlify.app/" },
+  { title: "Community Event Platform", desc: "A prototype platform that helps communities organize, discover, and manage local events seamlessly.", tags: ["Figma", "Prototype", "UI/UX"], emoji: "🎉", link: "https://cross-task-90088865.figma.site" },
 ];
 
 const CERTIFICATES = [
